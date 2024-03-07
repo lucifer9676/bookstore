@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Book</title>
+    <style>
+      /* Form container */
+      form {
+        background-color: #fefefe;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      /* Form fields */
+      input[type="text"],
+      input[type="date"],
+      input[type="number"],
+      input[type="submit"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      /* Submit button */
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+    </style>
+</head>
+<body>
+    <form action="AddBook" method="post">
+    <input type="text" name="title" placeholder="Title" required> 
+    <input type="text" name="author" placeholder="Author" required> 
+    <input type="text" name="genre" placeholder="Genre" required> 
+    <input type="date" name="published_date" placeholder="Published Date" required> 
+    <input type="number" name="price" placeholder="Price" required> 
+    <input type="number" name="quantity" placeholder="Quantity" required> 
+    <input type="submit" value="Submit">
+</form> 
+</body>
+</html>

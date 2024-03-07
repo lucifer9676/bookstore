@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Table</title>
+        <link rel="stylesheet" type="text/css" href="./BookList.css">
+    </head>
+    <body>
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    
+                </tr>
+            </thead>
+            <tbody id="bookTableBody"></tbody>
+        </table>
+        <div id="formPopup" class="popup" >
+              <div class="popup-content">
+                    <span class="close" id="closeFormBtn">&times;</span>
+                    <form id="myForm" action="EditBook" method="post">
+                        <input type="hidden" name="id" id="id"value="">
+                        <input type="text" name="title" id="title" placeholder="Title" required> 
+                        <input type="text" name="author" id="author" ="author" placeholder="Author" required> 
+                        <input type="text" name="genre" id="genre" placeholder="Genre" required> 
+                        <input type="date" name="published_date" id="published_date" placeholder="Published Date" required> 
+                        <input type="number" name="price" id="price" placeholder="Price" required> 
+                        <input type="number" name="quantity" id="quantity"placeholder="Quantity" required> 
+                        <input type="submit" value="Submit">
+                    </form>
+              </div>
+        </div>
+
+        <script src="./booklist.js"></script>
+    </body>
+</html>
